@@ -1,5 +1,5 @@
 baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
+title = "TEST"
 description = "This is a project description"
 relativeURLs = true
 theme = "theme" 
