@@ -1,13 +1,13 @@
-baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
-description = "This is a project description"
+baseURL = "https://nullerh.github.io/02467_group4/"
+title = "Social Science Exam project"
+description = "Analysis of Amazon fine foods reviews"
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Henrik Nielsen", "Inga Jensen", "Mikkel Andersen"]
+    authors = ["Emil Ortvald", "Joachim Christensen", "Peter Hulgaard"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
-    github = "https://github.com/peterampazzo/project-website-template"
+    github = "https://github.com/nullerh/02467_group4"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
