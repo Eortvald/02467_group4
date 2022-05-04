@@ -7,7 +7,7 @@ next: network-analysis
 The data of this analysis are reviews of Amazon fine food products as well as some 
 metadata for the products in the reviews. For the reviews themselves we have some 
 
-The XXXXXXXXXXX reviews of XXXXXXXXXXXX products are loaded into a pandas dataframe. Each row in the dataframe
+The 1139892 reviews of 39320 products are loaded into a pandas dataframe. Each row in the dataframe
 corresponds to a review and each column is a variable for the review. Below, we've
 included a snippet of the review dataframe.
 
@@ -28,10 +28,23 @@ other users' opinion on this specific review. Other users can vote on if a revie
 is 'helpful' which will show here. *style* contains information regarding 
 specifications of the product (weight/volume/6-pack/packaging etc.)
 *image* refer to images they may be attached to the review.
+We will mainly keep track of 
+
+Since we suspect that some of the reviews are made by bots, we exclude these reviews based 
+on some common criteria:
+* The same userID submitted multiple reviews within seconds of one another.
+* The same userID left multiple reviews of the same product.
+* Users review different products with the same review/title for the products
+* Multiple users making identical reviews for a product.
+We choose to be tough on bot-like reviews since the dataset is so large.
+For instance this user posted multiple very similar reviews on the same product.
+
+
+<img src="/images/repeated_review.PNG">
 
 As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
-dataframe and similarly to the review data, there are XXXXX rows corresponding to 
+dataframe and similarly to the review data, there are 39320 rows corresponding to 
 each unique product. The columns are variables regarding each of the products. We
 have the following variables:
 *category* contains a category and all the subcategories the product belongs to.
@@ -51,3 +64,8 @@ they were listed and *main_cat* which is mostly grocery since this is the catego
 we're the most interested in. Lastly, we have a *tokens* connected with each unique 
 product.
 
+# Cleaning and tokenization #
+As mentioned above, we removed all reviews that we're deemed to be written by a bot from the simple
+criteria listed above. Furthermore, we make documents for each product containing a tokenized version
+of the review text and remove stopwords. This is simply done using the *asin* product code to get
+all reviews of a product. 
