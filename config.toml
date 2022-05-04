@@ -1,6 +1,6 @@
 baseURL = "https://nullerh.github.io/02467_group4/"
-title = "TEST"
-description = "This is a project description"
+title = "Group 4 - 02467 Exam Project"
+description = "Amazon fine foods reviews"
 relativeURLs = true
 theme = "theme" 
 [params]
