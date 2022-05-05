@@ -36,6 +36,7 @@ on some common criteria:
 * The same userID left multiple reviews of the same product.
 * Users review different products with the same review/title for the products
 * Multiple users making identical reviews for a product.
+
 We choose to be tough on bot-like reviews since the dataset is so large.
 For instance this user posted multiple very similar reviews on the same product.
 
@@ -67,5 +68,5 @@ product.
 # Cleaning and tokenization #
 As mentioned above, we removed all reviews that we're deemed to be written by a bot from the simple
 criteria listed above. Furthermore, we make documents for each product containing a tokenized version
-of the review text and remove stopwords. This is simply done using the *asin* product code to get
-all reviews of a product. 
+of the review text. This is simply done using the *asin* product code to get
+all reviews of a product. You can see in detail what has been done in the explainer-notebook.html.

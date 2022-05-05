@@ -24,7 +24,8 @@ between the review score and sentiment score of the product reviews.
 
 In order to get the sentiment score of the reviews we use the Hedonometer sentiment score and
 take the mean over the document for each product which yields a general sentiment of a product.
-We compare this to the score of the review (the 1-5 star rating).
+We compare this to the score of the review (the 1-5 star rating) corresponding to the 
+*overall* variable in the review dataframe for the product.
 
 <img src="/images/sentiment_star.png">
 
