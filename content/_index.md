@@ -14,7 +14,7 @@ users on 41320 products. The dataset can be found [here](https://nijianmo.github
 sourced from a release of Amazon review data in 2014. The data is sorted so that only products that have at
 least 5 reviews and users that have give at least 5 reviews are in the dataset.
 The goal of this project is to outline and analyze review text in two ways.
-1. We use the review score and compare to the sentiment of the review
+1. We will compare review score to the sentiment of the review
 2. We create communities based on products bought and viewed by the same users
 and create wordclouds for these communities to analyse the tendencies based on
 these product communities.
