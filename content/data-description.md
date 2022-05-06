@@ -6,7 +6,8 @@ next: text-analysis
 
 The data of this analysis are reviews of Amazon fine food products as well as some 
 metadata for the products in the reviews.
-<img src="/images/food_front.jpg">
+
+<img src="/images/food_front.jpg"/>
 
 The 1.1 millions reviews are loaded into a pandas dataframe. Note that only products and users that have at
 least 5 reviews are in the dataset. Each row in the dataframe
@@ -49,7 +50,7 @@ We choose to be tough on bot-like reviews since the dataset is so large.
 For instance this user posted multiple very similar reviews on the same product.
 
 
-<img src="/images/bot_table.png">
+<img src="/images/bot_table.png"/>
 
 As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
