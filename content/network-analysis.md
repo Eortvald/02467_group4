@@ -64,8 +64,10 @@ Cooking & Baking             |  Herbs, Spices & Seasonings
 :-------------------------:|:-------------------------:
 <img src="/images/cooking_baking.png" alt="drawing" width="800"/>  | <img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
 
+Snack Foods             |  
+:-------------------------:|:-------------------------:
+<img src="/images/snack_foods.png" alt="drawing" width="800"/>  | 
 
-<img src="/images/snack_foods.png" alt="drawing" width="800"/>
 
 
 
