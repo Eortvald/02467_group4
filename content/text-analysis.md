@@ -3,23 +3,24 @@ title: Text analysis
 prev: data-description
 next: network-analysis
 ---
-For the text analysis we want to investigate sentiment scores in order to evalute how they compare to the amazon score. This is interesting since it will tells us how good the Hendometer sentiment weights generlize across different text domians. It will also tell os someting about how language is sorrounding review on amazon food reviews - do people use strong positive/negative language for there reviews?  
+For the text analysis we want to investigate sentiment scores in order to evalute how they compare to the amazon score. This is interesting since it will tells us how good the Hendometer sentiment weights generalize across different text domians. It will also tell os someting about how language is conveyed sorrounding review on amazon food reviews - do people use strong positive/negative language for there reviews?  
 
-In order to cunduct a proper text analysis we first need to clean up the text data. This consisted of removing numbers, and symbols from the text corpus, togehter with using regular expressions to remove patterns of text consituting HTML url embeddings, that some users sometimes would leave in there reviews to reference othe rproducts, we also removed unicode for newline, whitespace, special symbols and tabs. All the text was also lowered.  
+In order to cunduct a proper text analysis we first need to clean up the text data. This consisted of removing numbers, and symbols from the text corpus, togehter with using regular expressions to remove patterns of text consituting HTML url embeddings, that some users sometimes would leave in there reviews to reference other products, we also removed unicode for newline, whitespace, special symbols and tabs. All the text was also lowered.  
 
-Further more in order to prepare the data for sentiment analysis and TF-DIF + Wordclouds, we remove stopwords, from the corpus. Our prior experince with the defualt stopwords in NLTK, was that is was is not, so we extended the stopwords from multipe sources among others - some commenly used in SQL quering.  
-For the tokenization we use NLTK tokenizer since this is an effective solution. Regarding stemming, we didnt find it fit for our use, among reasons was that the words in the Hendometer is not stemmed.  
+Furthermore, in order to prepare the data for sentiment analysis and TF-DIF + Wordclouds, we remove stopwords, from the corpus. Our prior experince with the defualt stopwords in NLTK, was not sufficient enough for us, so we extended the stopwords from multiple sources, among other, standard stopwords for SQL quering.  
+
+For the tokenization we use NLTK tokenizer. This is an effective solution that yield a sufficent good result. Regarding stemming, we didnt find it fit for our use, among reasons was that the words in the Hendometer is not stemmed.  
 
 For constructing documents to use both for sentiment analysis and later for TF-IDF analysis, we combine all reviews tokens belogning to a product as one document, so we ended up with a list of tokens for each unique product. We also calculate the average score for each product from the all the reveiws, this we call just `score`.  
 
 In order to get the sentiment score of the reviews we use the Hedonometer sentiment score and
-take the mean over the document for each product which yields a general `sentiment_score` of the product.  
+take the mean over the document for each product, This yields a general `sentiment_score` of the product.  
 
 We then inspect the distribution of Amazon scores and Sentimet scores by vizualization
 
 |      |  |
 | ---      | ---       |
-| ![](/images/amazon_score.png) | ![](/images/amazon_score.png) |
+| ![](/images/amazon_score.png) | ![](/images/sentiment_score.png) |
 
 We see that there is a great imbalance in the Amazon reviews scores, a majority of products have very high scores, maybe even alarmingly high amount with the score 5.0.
 Looking at the Sentiment score distribution we find that it is looking very normally distributed. We see the mean is located above the neutral score of 5. This is in accordancde with research done on other corpuses using the Hendometer wieghs - [Human language reveals a universal positivity bias](https://arxiv.org/abs/1406.3855)
