@@ -1,5 +1,5 @@
 baseURL = "https://nullerh.github.io/02467_group4/"
-title = "Social Science Exam project"
+title = "Amazon fine food reviews"
 description = "Analysis of Amazon fine foods reviews"
 relativeURLs = true
 theme = "theme" 
