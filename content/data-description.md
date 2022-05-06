@@ -10,7 +10,7 @@ metadata for the products in the reviews. For the reviews themselves we have som
 The 1.1 millions reviews are loaded into a pandas dataframe. Note that only products and users that have at
 least 5 reviews are in the dataset. Each row in the dataframe
 corresponds to a review and each column is a variable for the review. Below, we've
-included a snippet of the review dataframe.
+included a snippet of the review dataframe. The review are from 2000-08-09 to 2018-10-02
 
 <img src="/images/data_example.PNG" title="Snippet of 2 reviews"/>
 
