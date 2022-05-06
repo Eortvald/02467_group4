@@ -3,25 +3,28 @@ title: Text analysis
 prev: data-description
 next: network-analysis
 ---
-In order to cunduct a proper text analysis we first need to clean up the text data. This consisted of removing numbers, and symbols from the text corpus, togehter with using regular expressions to remove patterns of text consituting HTML url embeddings, that some users sometimes would leave in there reviews to reference othe rproducts, we also removed unicode for newline, whitespace, special symbols and tabs. All the text was also lowered. Further more in order to prepare the data for sentiment analysis and TF-DIF + Wordclouds, we removed stopwords, from the corpus. Our prior experince with the defualt stopwords in NLTK, was that is was not enough, so we extended the stopwords from multipe sources among others - some commenly used in SQL quering.  
-For the tokenization we used NLTK tokenizer since this is an effective solution. Regarding stemming, we didnt find it fit for our use, among reasons was that the words in the Hendometer is not stemmed.  
+For the text analysis we want to investigate sentiment scores in order to evalute how they compare to the amazon score. This is interesting since it will tells us how good the Hendometer sentiment weights generlize across different text domians. It will also tell os someting about how language is sorrounding review on amazon food reviews - do people use strong positive/negative language for there reviews?  
 
-For constructing documents to use both for sentiment analysis and later for TF-IDF analysis, we combined all reviews texts belogning to a product as one document, so we ended up with a document for each unique product in among the reviews. 
-We use the documents of the products to carry out a sentiment analysis and
-cross-reference this to the review score, where we expect to see some correlation
-between the review score and sentiment score of the product reviews.
+In order to cunduct a proper text analysis we first need to clean up the text data. This consisted of removing numbers, and symbols from the text corpus, togehter with using regular expressions to remove patterns of text consituting HTML url embeddings, that some users sometimes would leave in there reviews to reference othe rproducts, we also removed unicode for newline, whitespace, special symbols and tabs. All the text was also lowered.  
 
+Further more in order to prepare the data for sentiment analysis and TF-DIF + Wordclouds, we remove stopwords, from the corpus. Our prior experince with the defualt stopwords in NLTK, was that is was is not, so we extended the stopwords from multipe sources among others - some commenly used in SQL quering.  
+For the tokenization we use NLTK tokenizer since this is an effective solution. Regarding stemming, we didnt find it fit for our use, among reasons was that the words in the Hendometer is not stemmed.  
+
+For constructing documents to use both for sentiment analysis and later for TF-IDF analysis, we combine all reviews tokens belogning to a product as one document, so we ended up with a list of tokens for each unique product. We also calculate the average score for each product from the all the reveiws, this we call just `score`.  
+
+In order to get the sentiment score of the reviews we use the Hedonometer sentiment score and
+take the mean over the document for each product which yields a general `sentiment_score` of the product.  
+
+We then inspect the distribution of Amazon scores and Sentimet scores by vizualization
 
 |      |  |
 | ---      | ---       |
 | ![](/static/images/amazon_score.png) | ![](/static/images/amazon_score.png) |
 
+We see that there is a great imbalance in the Amazon reviews scores, a majority of products have very high scores, maybe even alarmingly high amount with the score 5.0.
+Looking at the Sentiment score distribution we find that it is looking very normally distributed. We see the mean is located above the neutral score of 5. This is in accordancde with research done on other corpuses using the Hendometer wieghs - [Human language reveals a universal positivity bias](https://arxiv.org/abs/1406.3855)
 
-In order to get the sentiment score of the reviews we use the Hedonometer sentiment score and
-take the mean over the document for each product which yields a general sentiment of a product.
-We compare this to the score of the review (the 1-5 star rating) corresponding to the 
-*overall* variable in the review dataframe for the product.
-
+We then look at the linear relationship between these two scorings.
 <img src="/images/mean_amazon_sentiment.png">
 
 As can be seen on the figure above where we have the sentiment score on the y-axis and the 
@@ -32,4 +35,9 @@ One interesting point to make is that the sentiment of the reviews are distribut
 median score which is higher as the score grows, but even for all the 5-star reviews the 
 sentiment seems to be normally distributed and so there's quite a vast variety of sentiment
 values for the reviews with the same score. This could imply that there are different opinions
-on what constitutes a 5-star review or just that the reviewers have very different review styles.
+on what constitutes a 5-star review or just that the reviewers have very different review styles.  
+
+We can see that there is a linear relationship, we calculate a correlation to be  0.4. Its not a very strong correlation but significant enough.
+A explanation for why so many products has such a high score can be found in bias we might have induced ourselves - removing product with few reviews - where one can think that the product have fewer reviews was do to better product was brougth instead.
+
+The general problem seems to be that the Hendometer weights does not scores the reviews as high as the actual given score from the reviewer itself. A explanation could be that the type of language that a person will use for a review is more structured, than a random "statement" from a user on a social network like twitter - here a user is likely rewarded (read: getting likes,shares and retweets) more for making more extreme wordings both negative or positive in order to grab attentions. Whereas for a reviews - a user it maybe more focused on getting facts and specification communicated cleary, and even though a review is a tale of experiences, they might word it in a more formal language in order to archive trust, respect and credibility
