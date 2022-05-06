@@ -3,7 +3,7 @@ title: Text analysis
 prev: data-description
 next: network-analysis
 ---
-### Cleaning and Tokenization
+### **Cleaning and Tokenization**
 For the text analysis we want to investigate sentiment scores in order to evalute how they compare to the amazon score. This is interesting since it will tells us how good the Hendometer sentiment weights generalize across different text domians. It will also tell os someting about how language is conveyed sorrounding review on amazon food reviews - do people use strong positive/negative language for there reviews?  
 
 In order to cunduct a proper text analysis we first need to clean up the text data. This consisted of removing numbers, and symbols from the text corpus, togehter with using regular expressions to remove patterns of text consituting HTML url embeddings, that some users sometimes would leave in there reviews to reference other products, we also removed unicode for newline, whitespace, special symbols and tabs. All the text was also lowered.  
@@ -12,7 +12,7 @@ Furthermore, in order to prepare the data for sentiment analysis and TF-DIF + Wo
 
 For the tokenization we use NLTK tokenizer. This is an effective solution that yield a sufficent good result. Regarding stemming, we didnt find it fit for our use, among reasons was that the words in the Hendometer is not stemmed.  
 
-### Documents and Sentiment score
+### **Documents and Sentiment score**
 For constructing documents to use both for sentiment analysis and later for TF-IDF analysis, we combine all reviews tokens belogning to a product as one document, so we ended up with a list of tokens for each unique product. We also calculate the average score for each product from the all the reveiws, this we call just `score`.  
 
 In order to get the sentiment score of the reviews we use the Hedonometer sentiment score and
@@ -27,7 +27,7 @@ We then inspect the distribution of Amazon scores and Sentimet scores by vizuali
 We see that there is a great imbalance in the Amazon reviews scores, a majority of products have very high scores, maybe even alarmingly high amount with the score 5.0.
 Looking at the Sentiment score distribution we find that it is looking very normally distributed. We see the mean is located above the neutral score of 5. This is in accordancde with research done on other corpuses using the Hendometer wieghs - [Human language reveals a universal positivity bias](https://arxiv.org/abs/1406.3855)
 
-### Relationship between Amazon revies scores and Sentiments scores
+### **Relationship between Amazon revies scores and Sentiments scores**
 We then look at the linear relationship between these two scorings.
 <img src="/images/mean_amazon_sentiment.png">
 
