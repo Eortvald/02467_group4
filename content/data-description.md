@@ -1,7 +1,7 @@
 ---
 title: Data description
 prev: "/"
-next: network-analysis
+next: text-analysis
 ---
 
 The data of this analysis are reviews of Amazon fine food products as well as some 
