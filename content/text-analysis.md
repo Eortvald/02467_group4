@@ -1,6 +1,7 @@
 ---
 title: Text analysis
-prev: network-analysis
+prev: data-description
+next: network-analysis
 ---
 
 First and foremost clean and tokenize the review texts. Everything is lowercased, 
