@@ -3,16 +3,14 @@ title: Network analysis
 prev: data-description
 next: text-analysis
 ---
-In the network analysis we connect products that have common users having viewed or purchased them. So if two
-arbitrary products have been viewed or purchased by the same user they are connected in the graph. Each
-product must have at least 15 common users having viewed or purchased them in order for them to be connected
-in the graph.
+In the network analysis we connect products that have 15 common products also viewed or purchased. So if two
+arbitrary products have been viewed or purchased with at least 15 of the same other products
+they are connected in the graph.
 
 We will use different analytical tools to see the structure of the network.
 
-Since the edges of the graph are users who purchased or viewed the same product, we expect to see
-some groupings of users who view or buy similar products. This is based on the hypothesis that
-users who view or buy e.g. some chocolate products are also more likely to view or buy other 
+We expect to see some groupings products based on the hypothesis that users who view or buy e.g. 
+some chocolate products are also more likely to view or buy other 
 chocolate products. Nevertheless, the structure of the graph will tell us something
 about patterns in the data.
 
@@ -21,8 +19,9 @@ communities; here we might see the tendencies that we hypothesize, namely that w
 communities of e.g. coffee users or generally communities around specific categories.
 
 ## Constructing the Network of fine-food products
-Buidling the network as described above, we should get nodes that are connected with other nodes of similar type, 
-either category wise or simply products that are e.g. used together, like pasta and ketchup.
+Building the network as described above, we should get nodes that are connected with other nodes of similar type, 
+either category. One can imagine for instance a user shopping for tea, viewing or purchasing all kinds of differently
+flavored tea; so we might see all kinds of tea connected in the graph.
 <br>
 Below is an image of the constructed network of Amazon fine-food products.
 <img src="/images/nopartition_2200_alsoviewed.png" alt="drawing" width="400"/>
