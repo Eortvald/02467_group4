@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 The data of this analysis are reviews of Amazon fine food products as well as some 
-metadata for the products in the reviews. For the reviews themselves we have some 
+metadata for the products in the reviews. 
 
 The 1.1 millions reviews are loaded into a pandas dataframe. Note that only products and users that have at
 least 5 reviews are in the dataset. Each row in the dataframe
