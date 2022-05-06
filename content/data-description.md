@@ -48,7 +48,7 @@ We choose to be tough on bot-like reviews since the dataset is so large.
 For instance this user posted multiple very similar reviews on the same product.
 
 
-<img src="/images/repeated_review.PNG">
+<img src="/images/bot_table.PNG">
 
 As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
