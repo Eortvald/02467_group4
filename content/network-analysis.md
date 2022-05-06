@@ -74,9 +74,10 @@ Snack Foods & Breakfeast Foods             |
 :-------------------------:|:-------------------------:
 <img src="/images/snack_foods.png" alt="drawing" width="400"/>  | 
 
-The words from the wordclouds is in great accordance with the associated dominating food categories for each community. We only see words that are specific for each of the categories/communities
+The words from the wordclouds is in great accordance with the associated dominating food categories for each community. We only see words that are specific for each of the categories/communities. Since the wordclouds are made from TF-IDF, words that are common in all categories, such as "good" and "great" are not in the wordclouds, even though these are by far the most occuring words in the reviews. Also, we chose not to use stemmning with means that we are able to display the original words used in the review without causing confusion with stemmed words.  However, this also means that some of the wordclouds contain redundant wors. E.g. the "Beverages" wordcloud contain multiple variations of K-cups, which does not add anything unique to the wordcloud. But again, this is a tradeoff, that allow us toshow the original words from the reviews.
 
-Since the wordclouds are made from TF-IDF, words that are common in all categories, such as "good" and "great" are not in the wordclouds, even though these are by far the most occuring words in the reviews.
+
+
 
 
 
