@@ -36,4 +36,5 @@ surprising as better reviews naturally contains more positive wording.
 One interesting point to make is that the sentiment of the reviews are distributed around a 
 median score which is higher as the score grows, but even for all the 5-star reviews the 
 sentiment seems to be normally distributed and so there's quite a vast variety of sentiment
-values for the same review with the same score.
+values for the reviews with the same score. This could imply that there are different opinions
+on what constitutes a 5-star review or just that the reviewers have very different review styles.
