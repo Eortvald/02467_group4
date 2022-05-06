@@ -19,6 +19,6 @@ theme = "theme"
         link = "/network-analysis"
     [[params.nav]]
         label = "Summary"
-        link = "/Summary"
+        link = "/summary"
     
 
