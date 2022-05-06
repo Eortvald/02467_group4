@@ -16,7 +16,7 @@ take the mean over the document for each product which yields a general sentimen
 We compare this to the score of the review (the 1-5 star rating) corresponding to the 
 *overall* variable in the review dataframe for the product.
 
-<img src="/images/sentiment_star.png">
+<img src="/images/mean_amazon_sentiment.png">
 
 As can be seen on the figure above where we have the sentiment score on the y-axis and the 
 review score on the x-axis there's a correlation between sentiment and review score which isn't very
