@@ -6,7 +6,7 @@ theme = "theme"
 [params]
     authors = ["Emil Ortvald - s194276", "Joachim Christensen - s173743", "Peter Hulgaard - s194277"]
     notebook = "/explainer-notebook.html"
-    drive = "https://github.com/Joachimchristensen/02467-comsocsci-examproject"
+    data = "https://github.com/Joachimchristensen/02467-comsocsci-examproject"
     github = "https://github.com/nullerh/02467_group4"
     [[params.nav]]
         label = "Data"
