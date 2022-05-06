@@ -1,39 +1,26 @@
 ---
-title: Home Page
+title: Amazon fine foods reviews
 layout: single
 next: data-description
 ---
-## Motivation for project
+## The project
+The main idea with this project is to analyze reviews on Amazon fine food products.
+Are the reviews useful to determine the quality of a product? Is there correlation
+between the review score and the sentiment of the reviews? Are there groups or
+communities of users in some product categories and if so, how do the reviews
+differ from each community in terms of review text.
+The project will therefore mainly focus on social tendencies in Amazon reviews.
+The dataset comes from ######## and consist of 1.1 millions reviews from 127500 
+users on 41320 products.
+The goal of this project is to outline and analyze review text in two ways.
+1. We use the review score and compare to the sentiment of the review
+2. We create communities based on products bought and viewed by the same users
+and create wordclouds for these communities to analyse the tendencies based on
+these product communities.
 
-This is very interesting.
+> In the following sections we will introduce the data in more depth including
+> the preprocessing of the data. We will introduce and discuss the results of 
+> the network and text analysis in the network and text sections.
 
-## Math formula
-
-
-$$ x^n + y^n = z^n $$
-
-## Code chunk
-
-```
-import pandas as pddddddddddddddddddddddddddddddddddddddddddd
-
-df = pd.DataFrame()
-```
-
-Sed id orci ullamcorper, commodo sapien in, scelerisque nunc. Duis posuere sed nisl in gravida. Pellentesque rutrum justo ut mi tempus dignissim. Ut pulvinar quis urna ut molestie. Pellentesque nec arcu metus. Vivamus non rutrum magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-![](https://source.unsplash.com/random/?Copenhagen)
-
-Phasellus viverra tellus viverra purus placerat, et lacinia mauris tristique. Nam semper venenatis lorem, nec ullamcorper tortor dignissim eget. Etiam non ipsum sed neque pharetra ullamcorper. Praesent ultrices ipsum varius dictum lacinia. Nulla placerat magna augue, volutpat rutrum nulla finibus sed. Phasellus maximus mi sit amet risus mattis, porta rhoncus elit dictum. Donec vel viverra lectus, vitae elementum arcu. Quisque quis molestie elit. Cras eget tellus vitae risus fermentum bibendum vitae ac turpis. Praesent mi eros, scelerisque sit amet sem at, hendrerit accumsan ligula.
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mauris aliquet, convallis ligula vel, mollis est. Fusce accumsan massa vel lectus dapibus, at vehicula elit auctor.
-
-| Column 1  | Column 2  |  Column 3 |
-|---|---|---|
-| 1 | 4 | 7 |
-| 2 | 5 | 8 |
-| 3 | 6 | 9 |
 
 ## [Explainer Notebook](explainer-notebook.html)
-
-Aenean non augue vulputate, bibendum ligula ac, euismod arcu. Proin consequat, urna at lobortis sodales, ligula nulla molestie dolor, et interdum nulla arcu eu lacus. Aenean maximus mi vel augue blandit, quis vehicula libero egestas. In mollis nibh in turpis sodales, eget luctus sem pretium. Integer lobortis diam vel nisi laoreet, ut condimentum risus ultrices. Praesent diam risus, imperdiet at lorem in, hendrerit auctor ex.
