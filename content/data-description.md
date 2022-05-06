@@ -16,27 +16,13 @@ included a snippet of the review dataframe. The reviews are from 2000-08-09 to 2
 
 <img src="/images/data_example.PNG" title="Snippet of 2 reviews"/>
 
-The header in each column explains the variables of the review in each row. Firstly,
-we have an 
-* ``overall``  review score corresponding to how many 'stars' the reviewer gave
-the product on a scale of 1-5. 
-* ```verified``` column is true if the user that reviewed
-the product actually has a purchase of the product which is verified by Amazon. 
-* ```reviewTime``` in month/day/year format,
-* ```reviewerID``` a code for a user 
-* ```asin``` is the product code for the reviewed item. 
-* ```reviewerName``` is the profile name of the user that reviewed the product. 
-* ```reviewText``` is the comment 
-* ```summary``` is the 'headline' of the comment
-* ```TEXT``` variable is a combination of these two. 
-* ```unixReviewTime``` is the review time in unix (so the number of seconds
-since 00:00:00 UTC on January 1st 1970).
-* ```vote``` is a variable that contains 
-other users' opinion on this specific review. Other users can vote on if a review
-is 'helpful' which will show here. 
-* ```style``` contains information regarding 
-specifications of the product (weight/volume/6-pack/packaging etc.)
-* ```image``` refer to images they may be attached to the review.
+The header in each column explains the variables of the review in each row. As mentioned, we also have metadata on the products that are being reviewed. The
+metadata contains information about specific products. Including only the product that occur in our reduced data of reviews we have a total of 39320 products.  
+For the two datasets we have the following attriubtes:
+
+|   Review data   | Meta data |
+| ---      | ---       |
+| ![](/images/product.png) | ![](/images/meta.png) |
 
 
 Since we suspect that some of the reviews are made by bots, we exclude these reviews based 
@@ -48,48 +34,12 @@ on some common criteria:
 
 We choose to be tough on bot-like reviews since the dataset is so large.
 For instance this user posted multiple very similar reviews on the same product.
-
-
 <img src="/images/bot_table.png"/>
-
-As mentioned, we also have metadata on the products that are being reviewed. The
-metadata contains information about specific products. We load it in a pandas
-dataframe which contains 39320 rows corresponding to 
-each unique product. The columns are variables regarding each of the products. We
-have the following variables:
-* `category` contains a category and all the subcategories the product belongs to.
-Almost all the products are in the same category "Grocery and Gourmet food". But for 
-instance a teabag will have the subcategory "Beverages" and the sub-subcategory 
-"Coffee, tea". 
-* `title` has the product title
-* `description` contains description of the product.
-* `asin` is product code.
-`also_buy` contains the `asin` product codes for 
-products that users have also bought alongside this product, and likewise with 
-* `also_view` that contains the `asin` code for items that we're also viewed. 
-* `similar_item` likewise have the `asin` for similar items
-* `brand` 
-* `price`
-* `imageURL`
-* `imageURLHighRes`
-* `details` e.g. dimensions of the product
-* `feature`containing e.g. certifications of the product.
-* `rank` of the products listed after how well they sell
-* `date` of when the product was listed and 
-* `main_cat` which is mostly grocery since this is the category
-<br>
-<br>
-
-### **Cleaning and tokenization**
-As mentioned above, we removed all reviews that we've deemed to be written by a bot from the simple
-criteria listed above. Furthermore, we make documents for each product containing a tokenized version
-of the review text. This is simply done using the *asin* product code to get
-all reviews of a product. You can see in detail what has been done in the explainer-notebook.html.
-
-
-
+<br>  
 
 ## **The ten characteristics of big data**
+For the Amazon food data set we have here commented on the the ten characteristics of big data.  
+
 1. Big
    * The dataset is very large. It would not be feasible to collect the same amount of data by e.g. surveys. 
 2. Always-on
