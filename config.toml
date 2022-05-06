@@ -4,7 +4,7 @@ description = "Analysis of Amazon fine foods reviews"
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Emil Ortvald", "Joachim Christensen", "Peter Hulgaard"]
+    authors = ["Emil Ortvald - s194276", "Joachim Christensen - s173743", "Peter Hulgaard - s194277"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
     github = "https://github.com/nullerh/02467_group4"

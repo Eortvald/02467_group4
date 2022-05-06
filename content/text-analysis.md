@@ -7,10 +7,10 @@ First and foremost clean and tokenize the review texts. Everything is lowercased
 stemmed, stopwords and hyperlinks are removed, as well as backslash commands that 
 may appear.
 
-> Since the result of the text analysis is heavily dependent on the preprocessing 
-> we actually performed the whole analysis and then went back and changed the 
-> preprocessing, realizing that we should use stemming, remove some irrelevant 
-> words, which made the text analysis a recursive proces.
+Since the result of the text analysis is heavily dependent on the preprocessing 
+we actually performed the whole analysis and then went back and changed the 
+preprocessing, realizing that we should use stemming, remove some irrelevant 
+words, which made the text analysis a recursive proces.
 
 With these texts we made documents for each of the products and used tools we have 
 learned in this course to carry out an analysis. We used the documents of each 

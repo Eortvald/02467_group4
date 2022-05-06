@@ -3,7 +3,6 @@ title: Amazon fine foods reviews
 layout: single
 next: data-description
 ---
-## The project
 The main idea with this project is to analyze reviews on Amazon fine food products.
 Are the reviews useful to determine the quality of a product? Is there correlation
 between the review score and the sentiment of the reviews? Are there groups or
@@ -18,9 +17,9 @@ The goal of this project is to outline and analyze review text in two ways.
 and create wordclouds for these communities to analyse the tendencies based on
 these product communities.
 
-> In the following sections we will introduce the data in more depth including
-> the preprocessing of the data. We will introduce and discuss the results of 
-> the network and text analysis in the network and text sections.
+In the following sections we will introduce the data in more depth including
+the preprocessing of the data. We will introduce and discuss the results of 
+the network and text analysis in the network and text sections.
 
 
 ## [Explainer Notebook](explainer-notebook.html)
