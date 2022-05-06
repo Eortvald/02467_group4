@@ -3,7 +3,9 @@ title: Network analysis
 prev: data-description
 next: text-analysis
 ---
-# Constructing the Network of fine-food products
+# Netwoek analysis
+
+## Constructing the Network of fine-food products
 
 In order to analyze the relation between Amazon fine-food products based on the users action, we construct a network accordingly.
 <br>
@@ -13,7 +15,7 @@ This means that, if two products (product1/product2) in the network are linked, 
 Buidling the network this way, we should get nodes that are connected with other nodes of similar type, either category wise or simply products that are e.g. used together, like pasta and ketchup.
 <br>
 Below is an image of the constructed network of Amazon fine-food products.
-<img src="/images/dtu-logo.png" alt="drawing" width="200"/>
+<img src="/images/nopartition_2200_alsoviewed.png" alt="drawing" width="400"/>
 
 
 
