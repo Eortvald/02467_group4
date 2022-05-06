@@ -6,7 +6,7 @@ next: "/"
 
 The goal of the project has been to give insight into social and sentimental behvavior of the amazon fine foods reviews and to find out how well the products in amazon fine foods could be divided into smaller communities.
 
-From the text analysis, and especially the sentiment analysis, we found a linear relationship with a correlation of 0.4. The langauage used in all of the reviews has an average sentiment score of 6.25. wich is sligty above neutral, wchi has been proven to be a oftent seen behavoiur.  
+From the text analysis, and especially the sentiment analysis, we found a linear relationship with a correlation of 0.4. The langauage used in all of the reviews has an average sentiment score of 6.25. wich is sligty above neutral, which has been proven to be a oftent seen behavoiur.  
 We conclude that a linear relationship is seen between sentiment score and amazon score.
 
 
