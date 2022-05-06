@@ -1,6 +1,6 @@
 ---
 title: Summary
-prev: Summary
+prev: summary
 ---
 
 First and foremost clean and tokenize the review texts. Everything is lowercased, 
