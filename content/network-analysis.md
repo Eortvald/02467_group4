@@ -52,5 +52,17 @@ Now, lets have a look at the network where each node/product have been colored a
 
 ## **Analysing reviews from communities**
 
+Beverages             |  Candy & Chocolate
+:-------------------------:|:-------------------------:
+<img src="/images/beverages.png" alt="drawing" width="800"/>  |  <img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
+
+<img src="/images/beverages.png" alt="drawing" width="800"/>
+<img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
+<img src="/images/cooking_baking.png" alt="drawing" width="800"/>
+<img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
+<img src="/images/snack_foods.png" alt="drawing" width="800"/>
+
+
+
 
 
