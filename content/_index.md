@@ -1,5 +1,5 @@
 ---
-title: Amazon fine foods reviews
+title: What is this project about?
 layout: single
 next: data-description
 ---
