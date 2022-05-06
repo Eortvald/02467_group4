@@ -77,13 +77,13 @@ products that users have also bought alongside this product, and likewise with
 * `main_cat` which is mostly grocery since this is the category
 <br>
 <br>
-# Cleaning and tokenization #
+### **Cleaning and tokenization**
 As mentioned above, we removed all reviews that we've deemed to be written by a bot from the simple
 criteria listed above. Furthermore, we make documents for each product containing a tokenized version
 of the review text. This is simply done using the *asin* product code to get
 all reviews of a product. You can see in detail what has been done in the explainer-notebook.html.
 
-# The ten characteristics of big data #
+## **The ten characteristics of big data**
 1. Big
    * The dataset is very large. It would not be feasible to collect the same amount of data by e.g. surveys. 
 2. Always-on
