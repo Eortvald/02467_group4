@@ -20,9 +20,12 @@ The header in each column explains the variables of the review in each row. As m
 metadata contains information about specific products. Including only the product that occur in our reduced data of reviews we have a total of 39320 products.  
 For the two datasets we have the following attriubtes:
 
-|   Review data   | Meta data |
-| ---      | ---       |
-| ![](/images/product.png) | ![](/images/meta.png) |
+### Review dataframe
+<img src="/images/product.png"/>
+<br>
+
+### Meta dataframe
+<img src="/images/meta.png"/>
 
 
 Since we suspect that some of the reviews are made by bots, we exclude these reviews based 
