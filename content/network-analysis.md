@@ -19,3 +19,13 @@ about patterns in the data.
 We will give a measure of modularity which is how well the graph can be divided into smaller
 communities; here we might see the tendencies that we hypothesize, namely that we can see
 communities of e.g. coffee users or generally communities around specific categories.
+
+## Constructing the Network of fine-food products
+Buidling the network as described above, we should get nodes that are connected with other nodes of similar type, 
+either category wise or simply products that are e.g. used together, like pasta and ketchup.
+<br>
+Below is an image of the constructed network of Amazon fine-food products.
+<img src="/images/nopartition_2200_alsoviewed.png" alt="drawing" width="400"/>
+
+
+
