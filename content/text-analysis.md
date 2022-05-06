@@ -19,7 +19,7 @@ We then inspect the distribution of Amazon scores and Sentimet scores by vizuali
 
 |      |  |
 | ---      | ---       |
-| ![](/static/images/amazon_score.png) | ![](/static/images/amazon_score.png) |
+| ![](/images/amazon_score.png) | ![](/images/amazon_score.png) |
 
 We see that there is a great imbalance in the Amazon reviews scores, a majority of products have very high scores, maybe even alarmingly high amount with the score 5.0.
 Looking at the Sentiment score distribution we find that it is looking very normally distributed. We see the mean is located above the neutral score of 5. This is in accordancde with research done on other corpuses using the Hendometer wieghs - [Human language reveals a universal positivity bias](https://arxiv.org/abs/1406.3855)
