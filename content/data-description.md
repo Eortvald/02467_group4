@@ -112,7 +112,7 @@ all reviews of a product. You can see in detail what has been done in the explai
    as possible to increase the user experience on their website, especially positive reviews in order to
    sell more products. There have been stories of sellers offering users double refunds to take
    down negative reviews as these are absolutely detrimental for their products to compete, and there are
-   also many stories of users having their reviews deleted which creates confounders in the data.
+   also many stories of users having their reviews deleted, both of which creates confounders in the data.
 9. Dirty
    * Amazon tries to regulate bot reviews, at least seemingly. But it is impossible to know what's going on
    behind the scenes in Amazon offices. We must assume that not all reviews are human-made which is why we
