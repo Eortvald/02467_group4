@@ -48,7 +48,7 @@ We choose to be tough on bot-like reviews since the dataset is so large.
 For instance this user posted multiple very similar reviews on the same product.
 
 
-<img src="/images/bot_table.PNG">
+<img src="/images/bot_table.png">
 
 As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
@@ -77,11 +77,15 @@ products that users have also bought alongside this product, and likewise with
 * `main_cat` which is mostly grocery since this is the category
 <br>
 <br>
+
 ### **Cleaning and tokenization**
 As mentioned above, we removed all reviews that we've deemed to be written by a bot from the simple
 criteria listed above. Furthermore, we make documents for each product containing a tokenized version
 of the review text. This is simply done using the *asin* product code to get
 all reviews of a product. You can see in detail what has been done in the explainer-notebook.html.
+
+
+
 
 ## **The ten characteristics of big data**
 1. Big
