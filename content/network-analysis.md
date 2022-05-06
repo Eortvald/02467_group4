@@ -46,7 +46,7 @@ The plot below shows how many of each type of product (type meaning subcategory)
 
 What we can deduce from this plot is that the Louvian algorithm actually find partitions that mostly corresponds to the products' food subcategory. This is also supported by a relatively high Normalized Mutual Information at around 0.8, showing a high mutual dependence between the two ways of partitioning. Again, this is nice, since we can now treat each community (at least the top 5 in size, which we will be working with), as consisting of products of a certain food subcategory.
 
-## Analysing reviews from communities
+## **Analysing reviews from communities**
 
 
 
