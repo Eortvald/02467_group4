@@ -1,7 +1,7 @@
 ---
 title: Network analysis
-prev: data-description
-next: text-analysis
+prev: text-analysis
+next: summary
 ---
 In the network analysis we connect products that have 15 common products also viewed or purchased. So if two
 arbitrary products have been viewed or purchased with at least 15 of the same other products
