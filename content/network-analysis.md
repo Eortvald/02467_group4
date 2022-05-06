@@ -62,17 +62,20 @@ Now we can look at all the reviews for the products within each community. To do
 The wordclouds of the top TF-IDF words are presented below with their main representative food category as a title.
 
 
-Beverages             |  Candy & Chocolate
+Beverages             |  Cooking & Baking
 :-------------------------:|:-------------------------:
-<img src="/images/beverages.png" alt="drawing" width="800"/>  |  <img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
+<img src="/images/beverages.png" alt="drawing" width="800"/>  | <img src="/images/cooking_baking.png" alt="drawing" width="800"/> 
 
-Cooking & Baking             |  Herbs, Spices & Seasonings
+Candy & Chocolate             |  Herbs, Spices & Seasonings
 :-------------------------:|:-------------------------:
-<img src="/images/cooking_baking.png" alt="drawing" width="800"/>  | <img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
+<img src="/images/candy_chocolate.png" alt="drawing" width="800"/>  | <img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
 
-Snack Foods             |  
+Snack Foods & Breakfeast Foods             |  
 :-------------------------:|:-------------------------:
 <img src="/images/snack_foods.png" alt="drawing" width="400"/>  | 
+
+
+
 
 For the beverages community we see that the k-cups, k-cup and kcups are quite popular words. These are capsules for a specific brand nespresso style coffee machine from the company “Keurig” which is also quite a popular word in this community. We can also  see words like twinings, earl, and lipton; all terms that relate to tea. There is generally a good compliance between the word cloud and products you can expect to be in the beverages community.
 
