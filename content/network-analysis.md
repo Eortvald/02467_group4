@@ -26,5 +26,20 @@ flavored tea; so we might see all kinds of tea connected in the graph.
 Below is an image of the constructed network of Amazon fine-food products.
 <img src="/images/nopartition_2200_alsoviewed.png" alt="drawing" width="400"/>
 
+The network above has approx. 3k nodes and 500k edges.
+
+Since we are going to investigate groups of products that are related we conduct an preliminary analysis of the network, to 
+see how weel it splits into groups, i.e. the network's tendency to cluster.
+Below is a histogram showing the distributing of local clustering coefficients as well as the network's average clustering coefficient.
+<img src="/images/local_cluster.png" alt="drawing" width="400"/>
+
+We see a general high tendency for the products to cluster, which is aslo whatis seen in the image of the network presented above.
+This indicates that we can work with and analyze the different clusters in the network. Especially, see if the clusters is dominated by any specific fine-food category and see what words from the user reviews dominates these clusters.
+
+To work with the different clusters individually, we have to assign each node a label, according to which cluster it belongs to. To do this, we partition the network using community detection. First we assign each node a label according to its main subcategory (e.g. "Beverages" or "Snack foods"), then we use the Louvian algorithm to detect communities, and finally we compare these two and how well they partition the network into useful communities.
+
+
+
+
 
 
