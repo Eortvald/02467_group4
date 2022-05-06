@@ -109,7 +109,7 @@ other users' opinion on this specific review. Other users can vote on if a revie
 is &lsquo;helpful&rsquo; which will show here.</li><li><code>style</code> contains information regarding
 specifications of the product (weight/volume/6-pack/packaging etc.)</li><li><code>image</code> refer to images they may be attached to the review.</li></ul><p>Since we suspect that some of the reviews are made by bots, we exclude these reviews based
 on some common criteria:</p><ul><li>The same userID submitted multiple reviews within seconds of one another.</li><li>The same userID left multiple reviews of the same product.</li><li>Users review different products with the same review/title for the products</li><li>Multiple users making identical reviews for a product.</li></ul><p>We choose to be tough on bot-like reviews since the dataset is so large.
-For instance this user posted multiple very similar reviews on the same product.</p><img src=../images/bot_table.PNG><p>As mentioned, we also have metadata on the products that are being reviewed. The
+For instance this user posted multiple very similar reviews on the same product.</p><img src=../images/bot_table.png><p>As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
 dataframe which contains 39320 rows corresponding to
 each unique product. The columns are variables regarding each of the products. We
