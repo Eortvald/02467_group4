@@ -38,7 +38,7 @@ This indicates that we can work with and analyze the different clusters in the n
 
 To work with the different clusters individually, we have to assign each node a label, according to which cluster it belongs to. To do this, we partition the network using community detection. First we assign each node a label according to its main subcategory (e.g. "Beverages" or "Snack foods"), then we use the Louvian algorithm to detect communities, and finally we compare these two and how well they partition the network into useful communities.
 
-
+<img src="/images/louvian_comms.png" alt="drawing" width="400"/>
 
 
 
