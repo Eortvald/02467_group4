@@ -56,16 +56,15 @@ Beverages             |  Candy & Chocolate
 :-------------------------:|:-------------------------:
 <img src="/images/beverages.png" alt="drawing" width="800"/>  |  <img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
 
+Beverages             |  Candy & Chocolate
+:-------------------------:|:-------------------------:
+<img src="/images/cooking_baking.png" alt="drawing" width="800"/>  | <img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
+
 <p float="left">
  <img src="/images/beverages.png" alt="drawing" width="800"/>
    <img src="/images/candy_chocolate.png" alt="drawing" width="800"/> 
 </p>
 
-
-<img src="/images/beverages.png" alt="drawing" width="800"/>
-<img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
-<img src="/images/cooking_baking.png" alt="drawing" width="800"/>
-<img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
 <img src="/images/snack_foods.png" alt="drawing" width="800"/>
 
 
