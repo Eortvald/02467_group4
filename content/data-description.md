@@ -10,7 +10,7 @@ metadata for the products in the reviews.
 The 1.1 millions reviews are loaded into a pandas dataframe. Note that only products and users that have at
 least 5 reviews are in the dataset. Each row in the dataframe
 corresponds to a review and each column is a variable for the review. Below, we've
-included a snippet of the review dataframe. The review are from 2000-08-09 to 2018-10-02
+included a snippet of the review dataframe. The reviews are from 2000-08-09 to 2018-10-02.
 
 <img src="/images/data_example.PNG" title="Snippet of 2 reviews"/>
 
@@ -52,7 +52,7 @@ For instance this user posted multiple very similar reviews on the same product.
 
 As mentioned, we also have metadata on the products that are being reviewed. The
 metadata contains information about specific products. We load it in a pandas
-dataframe and similarly to the review data, there are 39320 rows corresponding to 
+dataframe which contains 39320 rows corresponding to 
 each unique product. The columns are variables regarding each of the products. We
 have the following variables:
 * `category` contains a category and all the subcategories the product belongs to.
@@ -78,7 +78,7 @@ products that users have also bought alongside this product, and likewise with
 <br>
 <br>
 # Cleaning and tokenization #
-As mentioned above, we removed all reviews that we're deemed to be written by a bot from the simple
+As mentioned above, we removed all reviews that we've deemed to be written by a bot from the simple
 criteria listed above. Furthermore, we make documents for each product containing a tokenized version
 of the review text. This is simply done using the *asin* product code to get
 all reviews of a product. You can see in detail what has been done in the explainer-notebook.html.
