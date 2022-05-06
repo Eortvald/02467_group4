@@ -18,7 +18,7 @@ We will give a measure of modularity which is how well the graph can be divided 
 communities; here we might see the tendencies that we hypothesize, namely that we can see
 communities of e.g. coffee users or generally communities around specific categories.
 
-## Constructing the Network of fine-food products
+## **Constructing the Network of fine-food products**
 Building the network as described above, we should get nodes that are connected with other nodes of similar type, 
 either category. One can imagine for instance a user shopping for tea, viewing or purchasing all kinds of differently
 flavored tea; so we might see all kinds of tea connected in the graph.
@@ -36,6 +36,8 @@ Below is a histogram showing the distributing of local clustering coefficients a
 We see a general high tendency for the products to cluster, which is aslo whatis seen in the image of the network presented above.
 This indicates that we can work with and analyze the different clusters in the network. Especially, see if the clusters is dominated by any specific fine-food category and see what words from the user reviews dominates these clusters.
 
+## **Community detection**
+
 To work with the different clusters individually, we have to assign each node a label, according to which cluster it belongs to. To do this, we partition the network using community detection. First we assign each node a label according to its main subcategory (e.g. "Beverages" or "Snack foods"), then we use the Louvian algorithm to detect communities, and finally we compare these two and check how well they partition the network into useful communities.
 
 It shows that both ways of creating communities yield a relatively high modularity at around 0.7, with the Louvian being slightly higher and finding fewer communities.
@@ -52,18 +54,16 @@ Now, lets have a look at the network where each node/product have been colored a
 
 ## **Analysing reviews from communities**
 
+
+
 Beverages             |  Candy & Chocolate
 :-------------------------:|:-------------------------:
 <img src="/images/beverages.png" alt="drawing" width="800"/>  |  <img src="/images/candy_chocolate.png" alt="drawing" width="800"/>
 
-Beverages             |  Candy & Chocolate
+Cooking & Baking             |  Herbs, Spices & Seasonings
 :-------------------------:|:-------------------------:
 <img src="/images/cooking_baking.png" alt="drawing" width="800"/>  | <img src="/images/herbs_spices_seasonings.png" alt="drawing" width="800"/>
 
-<p float="left">
- <img src="/images/beverages.png" alt="drawing" width="800"/>
-   <img src="/images/candy_chocolate.png" alt="drawing" width="800"/> 
-</p>
 
 <img src="/images/snack_foods.png" alt="drawing" width="800"/>
 
