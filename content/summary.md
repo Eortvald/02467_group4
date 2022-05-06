@@ -1,7 +1,6 @@
 ---
 title: Summary
 prev: network-analysis
-next: "/"
 ---
 
 The goal of the project has been to give insight into social and sentimental behvavior of the amazon fine foods reviews and to find out how well the products in amazon fine foods could be divided into smaller communities.
