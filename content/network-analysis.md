@@ -46,7 +46,7 @@ The plot below shows how many of each type of product (type meaning subcategory)
 
 <img src="/images/louvian_comms.png" alt="drawing" width="800"/>
 
-What we can deduce from this plot is that the Louvian algorithm actually find partitions that mostly corresponds to the products' food subcategory. This is also supported by a relatively high Normalized Mutual Information at around 0.8, showing a high mutual dependence between the two ways of partitioning. Again, this is nice, since we can now treat each community (at least the top 5 in size, which we will be working with), as consisting of products of a certain food subcategory.
+What we can deduce from this plot is that the Louvian algorithm actually find partitions that mostly corresponds to the products' food subcategory. This is also supported by a relatively high Normalized Mutual Information at around 0.8, showing a high mutual dependence between the two ways of partitioning. Also, we can see that it finds products from different but similar categories like "Canned, Jarred & Packaged Foods" and "Soups, Stocks & Broths" and partition these within the same community. Again, this is nice, since we can now treat each community (at least the top 5 in size, which we will be working with), as consisting of products of a certain food category.
 
 Now, lets have a look at the network where each node/product have been colored according to its community found by the Louvian algorithm.
 
@@ -74,18 +74,7 @@ Snack Foods & Breakfeast Foods             |
 :-------------------------:|:-------------------------:
 <img src="/images/snack_foods.png" alt="drawing" width="400"/>  | 
 
-
-
-
-For the beverages community we see that the k-cups, k-cup and kcups are quite popular words. These are capsules for a specific brand nespresso style coffee machine from the company “Keurig” which is also quite a popular word in this community. We can also  see words like twinings, earl, and lipton; all terms that relate to tea. There is generally a good compliance between the word cloud and products you can expect to be in the beverages community.
-
-For the candy and chocolate wordcloud we see words that refer to a brand, type of product or a specific product. There are also some words like xylitol which is a type of sweetener, or spry which is chewing gum.
-
-For the cooking and baking community there are likewise brands and products very related to cooking and baking. Xylitol is also a big word here which is sensible since sweeteners could be used in baking. Moisturizer is strangely placed in this community this is because natural oils like almond oil or coconut oil traditionally used in cooking is also being used as skin moisturizers, which is present in the reviews.
-
-Herbs, spices and seasonings consist largely of geographical areas and specific spices as well as some words relating to spices like steak and soup that are most likely prefixes.’
-
-In the snackfoods category there are mostly also just words relating to either a specific product, brand, or type of product. Some words relate to a specific flavor. 
+The words from the wordclouds is in great accordance with the associated dominating food categories for each community. We only see words that are specific for each of the categories/communities
 
 Since the wordclouds are made from TF-IDF, words that are common in all categories, such as "good" and "great" are not in the wordclouds, even though these are by far the most occuring words in the reviews.
 
