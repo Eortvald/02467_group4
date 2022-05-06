@@ -31,4 +31,9 @@ We compare this to the score of the review (the 1-5 star rating) corresponding t
 
 As can be seen on the figure above where we have the sentiment score on the y-axis and the 
 review score on the x-axis there's a correlation between sentiment and review score which isn't very
-surprising as better reviews naturally contains more positive wording.
+surprising as better reviews naturally contains more positive wording. 
+<br>
+One interesting point to make is that the sentiment of the reviews are distributed around a 
+median score which is higher as the score grows, but even for all the 5-star reviews the 
+sentiment seems to be normally distributed and so there's quite a vast variety of sentiment
+values for the same review with the same score.
