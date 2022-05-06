@@ -55,7 +55,7 @@ Now, lets have a look at the network where each node/product have been colored a
 
 ## **Analysing reviews from communities**
 
-In the following, we will look at the five largest communities found by the Louvian algorithm. And since, for each of these communities, 90% of the products belong to the same category, we just label each community according to the most occuring fine food subcategory. So for example, the largest community from the figure of the colored network, which is the blue one, we just label it as "Beverages", since more than 95% of the products herin is under this category.
+In the following, we will look at the five largest communities found by the Louvian algorithm. And since, for each of these communities, 90% of the products belong to the same category, we just label each community according to the most occuring fine food subcategory. So for example, the largest community from the figure of the colored network, which is the blue one, we just label it as "Beverages", since more than 90% of the products herin is under this category.
 
 Now we can look at all the reviews for the products within each community. To do this we create a document of tokens for each community, where the tokens are from all reviews concerning products within the given community. Then we perform a Term Frequency - Inverse Document Frequency (TF-IDF) on all of these documents and show the words with the highest TF-IDF value for each of the top 5 communities in a wordcloud.
 
